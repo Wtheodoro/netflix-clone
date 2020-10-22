@@ -1,0 +1,42 @@
+/* variavel no cc deve ser inseridas na raiz */
+:root {
+    --vermelho: #E50914;
+    --preto: #141414;
+    --cinza-claro: #AAA;
+    --branco: #FFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row; /* isso ja é padrão, colocar ou não implica num felx direction row*/
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--cinza-claro);
+    margin: 10px;
+}
+
+header nav a:hover {
+    color: var(--branco);
+}
