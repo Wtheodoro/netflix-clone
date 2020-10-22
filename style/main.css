@@ -12,9 +12,11 @@
     box-sizing: border-box;
 }
 
+/* Base elements */
 body{
     background: var(--preto);
     font-family: 'Times New Roman', Times, serif;
+    color: var(--branco);
 }
 
 header .container {
@@ -39,4 +41,24 @@ header nav a {
 
 header nav a:hover {
     color: var(--branco);
+}
+
+/* Main movie */
+.main-movie {
+    font-size: 16px;
+    background:linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('/img/capa-vikings.jpg');
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-movie .description {
+    margin-bottom: 30px;
+}
+
+.main-movie .title {
+    font-size: 40px;
 }
