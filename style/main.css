@@ -24,6 +24,7 @@ header .container {
     flex-direction: row; /* isso ja é padrão, colocar ou não implica num felx direction row*/
     justify-content: space-between;
     align-items: center;
+    margin-left: 20px;
 }
 
 header .logo {
@@ -55,10 +56,38 @@ header nav a:hover {
     align-items: flex-start;
 }
 
+.main-movie .container {
+    margin-left: 20px;
+    width: 60%;
+}
+
 .main-movie .description {
+    margin-top: 10px;
     margin-bottom: 30px;
 }
 
 .main-movie .title {
+    margin-top: 15%;
     font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.main-movie .button {
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: var(--branco);
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.main-movie .button:hover {
+    background-color: var(--cinza-claro);
+    color: var(--preto);
+}
+
+.main-movie .button i {
+    margin-right: 5px;
 }
